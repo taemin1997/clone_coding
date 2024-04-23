@@ -1,15 +1,20 @@
 footer{
+  background-color: rgba(0, 0, 139, 0.022);
   display: flex;
   width: 100%;
   height: 300px;
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .mainFooter{
-  width: 30%;
+  width: 35%;
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
+  font-size: 12px;
 }
 .FAQ{
   display: flex;
@@ -17,20 +22,46 @@ footer{
 }
 .faqBtn{
   width: fit-content;
-  text-decoration: none;
 }
 
 .footerBtns{
+  width: 30%;
+  font-size: 12px;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, min-content);
-    grid-auto-flow: column;
-    gap: 20px 10px;
-}
-.footerBtnsA{
-  text-decoration: none;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, min-content);
+  grid-auto-flow: column;
+  gap: 35px 20px;
 }
 .footerLine{
   border: 0.2px solid gray;
   opacity: calc(0.4);
+  margin: 15px 10px;
+}
+.infoFooter{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.comInfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoCss{
+  font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.infoIcons{
+  display: flex;
+}
+.icon-imgs{
+  border: 1px solid black;
+  margin-right: 10px;
+}
+.sns{
+  display: flex;
+  margin: 10px 20px;
 }
