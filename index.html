@@ -3,303 +3,1945 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ohou.se</title>
-  <link rel = "stylesheet" href="css/index_header.css"/>
+  <title>index</title>
+  <link rel="stylesheet" href="css/index_header.css">
   <link rel="stylesheet" href="css/index_main.css">
   <link rel="stylesheet" href="css/index_footer.css">
-  <link rel = "stylesheet" href="css/login.css"/>
-  <link rel = "stylesheet" href="css/join.css"/>
+  <script defer src="./javascript/header.js"></script>
+  <script defer src="./javascript/main.js"></script>
+  <script defer src="./javascript/footer.js"></script>
 </head>
 <body>
   <header>
-    <div class = "highest">
-      <div id = "ohouse">
-        <a href="#" style="text-decoration: none;">오늘의집</a>
-      </div>
-      <div>
-        <a href="#" class="highestA">
-          <span class = "highestSpan">커뮤니티</span>
-        </a>
-        <a href="#" class="highestA">
-          <span class = "highestSpan">쇼핑</span>
-        </a>
-      </div>
-        <a href="#" class="highestA">
-          <span class = "highestSpan">인테리어/생활</span>
-        </a>
-        <div id = "searchBtnDiv">
-          <button type="button" class = "searchButton">
-            <span class = "searchBtnSpan"></span>
-          </button>
-        </div>
-          <a href="#" class="cartA">
-            <span class="cartSpan">
-              <img src="#" alt="장바구니">
+    <div class="header">
+      <div class="header-div1">
+        <div class="header1-div-1">
+          <a href="#" class="header1-div-1-a">
+            <span class="header1-div-1-span">
+              <h2>오늘의집</h2>
             </span>
           </a>
-          <div class = "comMenuDiv">
-            <div class = "logJoin">
-              <a href = "#" class="comA">로그인</a>
-              <a href = "#" class="comA">회원가입</a>
-              <span id = "comSpan">
-                <button type="button" class="comBtn">
-                  글쓰기
-                </button>
-              </span>
+        </div>
+        <div class="header1-div-2">
+          <div class="header1-div-2-div">
+            <a href="#">커뮤니티</a>
+          </div>
+          <div class="header1-div-2-div">
+            <a href="#">쇼핑</a>
+          </div>
+          <div class="header1-div-2-div">
+            <a href="#">인테리어/생활</a>
+          </div>
+        </div>
+        <div class="header1-div-3">
+          <div class="searchbar-cart">
+            <span> 
+              <img src="img/search.png" alt="검색버튼" class="searchbar-img">
+            </span> 
+            <form action="#">
+              <label for="searchbar"></label>
+               
+              <input type="text" id="searchbar" placeholder="통합검색">
+            </form>
+            <div class="cart-icon">
+             
+                <a href="#">
+                  <img src="img/cart.png" alt="장바구니">
+                </a>
+              
             </div>
           </div>
-      </div>
-      <hr class = "headerHr">
-      <div class = "highest2"> 
-        <div class="navDiv">
-          <nav class="headerNav">
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  <div class="headerNavDiv">홈</div>
-                </a>
+          <div class="header1-div-3-div">
+            <div class="header1-div3-menus">
+              <a href="login.html">로그인</a>
             </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  추천
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  #채널
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  집들이
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  집사진
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  3D인테리어
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  살림수납
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  콜렉터블
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  홈스토랑
-                </a>
-              </div>
-            </span>
-            <span class="headerNavSpan">
-              <div class="headerNavDiv">
-                <a href="#" class="headerNavA">
-                  핫플
-                </a>
-              </div>
-            </span>
-          </nav>
+            <div class="header1-div3-menus">
+              <a href="join.html">회원가입</a>
+            </div>
+            <div class="header1-div3-menus">
+              <a href="#">고객센터</a>
+            </div>
+            <div class="header1-div3-menus-btn">
+              <a href="#">
+                <button type="button">
+                  <span class="h-div-btn-span">글쓰기</span>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr class="headerHr">
+      <div class="header-div2">
+        <div class="header-div2-1">
+          <nav>
+            <ul>
+              <div class="h-div2-nav-div" id="header-home">
+                <a href="#">
+                  <li>홈</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>추천</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>#채널</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>#집들이</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>집사진</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>3D인테리어</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>살림수납</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>콜렉터블</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>홈스토랑</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>핫플레이스</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>육아</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>플랜테리어</li>
+                </a>
+              </div>
+              <div class="h-div2-nav-div">
+                <a href="#">
+                  <li>반려동물</li>
+                </a>
+              </div>
+            </ul>
+          </nav>
+          <div class="header-div2-modal">
+            <div class="header-div2-modal-contents">
+              <a href="#">반려동물</a>
+            </div>
+            <div class="header-div2-modal-contents">
+              <a href="#">캠핑</a>
+            </div>
+            <div class="header-div2-modal-contents">
+              <a href="#">취미</a>
+            </div>
+            <div class="header-div2-modal-contents">
+              <a href="#">이벤트</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-morebutton-div">
+          <button type="button" class="morebtn-button">
+            <img src="img/down.png" alt="">
+        </div>
+        <div class="header-div2-2">
+          <div class="searchrank">
+            <div class="rank-name-1">
+              <span class="rank-num">1</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">규조토</span>
+                </a>
+              </div>
+              <div class="morebtn">
+                <button type="button" class="morebtn-button">
+                  <img src="img/down.png" alt="">
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="header-div2-rank">
+          <div class="rank-start"><h3>인기 검색어</h3></div>
+          <div class="rank-name">
+            <span class="rank-num">1</span>
+              <a href="#"> 
+               <span class="rank-up-icon">
+                  <img src="img/redup.png" alt="">
+               </span>
+                <span class="rank-name-name">규조토</span>
+              </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">2</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">붙이는 커튼</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">3</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">모듈 협탁</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">4</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">못없이커튼봉</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">5</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">베베숲</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">6</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">도어락</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">7</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">2인용 쇼파</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">8</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">먼지없는 러그</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">9</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">이케아 트롤리</span>
+                </a>
+            </div>
+            <div class="rank-name">
+              <span class="rank-num">10</span>
+                <a href="#"> 
+                 <span class="rank-up-icon">
+                    <img src="img/redup.png" alt="">
+                 </span>
+                  <span class="rank-name-name">이케아</span>
+                </a>
+            </div>
+        </div>
+      </div>
+      <!-- <hr style="opacity: calc(0.4); margin-top: 15px;"> -->
+    </div>
   </header>
   <main>
-    메인
+    <div class="main">
+      <div class="main1">
+        <div class="main1-div1">
+          <div class="main-img">
+            <a href="#">
+              <img src="img/main1-1.png" alt="main-img1">
+            </a>
+          </div>
+          <div class="main-img-box">
+            <div class="main-img-txt">
+              <h2>봄이 지나기 전에 누려야 할 색감 💛</h2>
+            </div>
+            <div class="main-img-user">
+              <div class="main-img-user-profile">
+                <img src="img/user.png" alt="">
+              </div>
+              <div class="main-img-user-info">
+                오늘의집 에디터
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main1-div2">
+          <section class="main1-div2-section">
+            <div class="main1-img-wrap">
+              <ul class="main1-slide-box">
+                <li>
+                    <div class="main1-img-box">
+                      <div class="main1-div2-img">
+                        <a href="#">
+                          <img src="img/main1-2.png" alt="main-img2">
+                        </a>
+                      </div>
+                      <div class="main1-div2-imgnum">
+                        <div class="main1-div2-imgnum-text">1/9</div>
+                        <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-3.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">2/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-4.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">3/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-5.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">4/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-6.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">5/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-5.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">6/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-8.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">7/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-9.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">8/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="main1-img-box">
+                    <div class="main1-div2-img">
+                      <a href="#">
+                        <img src="img/main1-10.png" alt="main-img2">
+                      </a>
+                    </div>
+                    <div class="main1-div2-imgnum">
+                      <div class="main1-div2-imgnum-text">9/9</div>
+                      <div class="main1-div2-imgnum-img"><img src="img/plus.png"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="main1-div2-slider slider">
+              <button type="button" class="left-slider-div" id="main1-prev">
+                <div class="left-selector-div">
+                  <span>
+                    <img src="img/left.png" alt="">
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="main1-div2-slider slider">
+              <button type="button" class="right-slider-btn" id="main1-next">
+                <div class="right-selecotr-div">
+                  <span><img src="img/right.png" alt=""></span>
+                </div>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="main2">
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-1.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                선물의달
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-2.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                오늘의딜
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-3.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                집들이
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-4.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                행운출첵
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-5.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                챌린지참여
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-6.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                크리에이터
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-7.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                장보기
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-8.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                빠른배송
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-9.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                리모델링
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main2-div">
+          <div class="main2-div-box">
+            <a href="#">
+              <div class="main2-div-img">
+                <img src="img/main2-10.png" alt="">
+              </div>
+              <div class="main2-div-text">
+                쉬운이사
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main3">
+        <div class="main3-div1">
+          <div class="main3-div1-textbox">
+            <div class="main3-div1-text">
+              <div class="main3-div1-text-a">
+                <a href="#"><h3>이런 사진 찾고 있나요?</h3></a>
+              </div>
+              <div class="main3-div1-text-txt">
+                좋아하실만한 콘텐츠를 추천해드려요
+              </div>
+            </div>
+          </div>
+          <div class="main3-div1-more">
+            <a href="#">
+              <div class="main3-div1-more-text morecontent">
+                더보기
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main3-div2">
+          <div class="main3-div2-imgs">
+            <ul class="main3-div2-img-box">
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-1.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <div class="user-id-span">란4</div>
+                  </div>
+                  <div class="main3-bookmark">
+                      <div class="main3-bookmark-div">
+                        <a href="#">
+                          <img src="img/bookmark.png" alt="">
+                        </a>
+                      </div>
+                    </b>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-2.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">ㅃ뿡빵</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-3.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">하율84</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-4.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">뱀집사</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-5.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">종기정기</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-6.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">kko.dgi</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                          <img src="img/bookmark.png" alt="">
+                        </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-7.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">lIon_</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-8.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">shin_S</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href=""><img src="img/main3-9.png" alt=""></a>
+                  </div>
+                  <div class="user-box">
+                    <div class="user-img">
+                      <img src="img/user.png" alt="">
+                    </div>
+                    <span class="user-id-span">Dessa</span>
+                  </div>
+                  <div class="main3-bookmark">
+                    <a href="#">
+                      <img src="img/bookmark.png" alt="">
+                    </a>
+                  </div>
+                </div>    
+              </li>
+              <li>
+                <div class="main3-img-container">
+                  <div class="main3-img-box">
+                    <a href="#">
+                      <img src="img/morearrow.png" alt="" id="main3-more-btn">
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main3-left-slider slider">
+            <button type="button" class="main3-left-slider-btn">
+              <div class="main3-left-slider-div">
+                <span>
+                  <img src="img/left.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+          <div class="main3-right-slider slider">
+            <button type="button" class="main3-right-slider-btn">
+              <div class="main3-right-slider-div">
+                <span>
+                  <img src="img/right.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main4">
+        <div class="main4-1">
+          <div class="main4-txt">
+            <a href=""><h3>40평이 넘는다면 이 집은 꼭 보세요</h3></a>
+          </div>
+          <div class="main4-more morecontent">
+            <a href="">더보기</a>
+          </div>
+        </div>
+        <div class="main4-2">
+          <div class="main4-2-div">
+            <a href="#">
+              <div class="main4-2-img">
+                <img src="img/main4-1.png" alt="">
+                <div class="main4-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main4-2-txt">
+                <span>없던 방을 만들었다고요?</span>
+                👀 다섯 식구를 위한 개인 공간 확보 비결!
+              </div>
+            </a>
+          </div>
+          <div class="main4-2-div">
+            <a href="#">
+              <div class="main4-2-img">
+                <img src="img/main4-2.png" alt="">
+                <div class="main4-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main4-2-txt">
+                <span>미니멀한 공간감을</span>
+                완성해주는 내력벽 수납
+              </div>
+            </a>
+          </div>
+          <div class="main4-2-div">
+            <a href="#">
+              <div class="main4-2-img">
+                <img src="img/main4-3.png" alt="">
+                <div class="main4-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main4-2-txt">
+                <span>우와...호텔이 따로 없네요</span>
+                모던한 감성으로 꽉 채운 50평대
+              </div>
+            </a>
+          </div>
+          <div class="main4-2-div">
+            <a href="#">
+              <div class="main4-2-img">
+                <img src="img/main4-4.png" alt="">
+                <div class="main4-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main4-2-txt">
+                <span>가족이 편하게 </span>
+                따로 또 같이 보낼 수 있도록-
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>     
+      <div class="main5">
+        <div class="main5-1">
+          <div class="main5-txt">
+            <a href=""><h3>더 더워지기 전에 정리 끝내봐요!</h3></a>
+          </div>
+          <div class="main5-more morecontent">
+            <a href="#">더보기</a>
+          </div>
+        </div>
+        <div class="main5-2">
+          <div class="main5-2-div">
+            <a href="#">
+              <div class="main5-2-img">
+                <img src="img/main5-1.png" alt="">
+                <div class="main5-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main5-2-txt">
+                <span>겨울 옷은 이렇게 정리하세요</span>
+                👀 다섯 식구를 위한 개인 공간 확보 비결!
+              </div>
+            </a>
+          </div>
+          <div class="main5-2-div">
+            <a href="#">
+              <div class="main5-2-img">
+                <img src="img/main5-2.gif" alt="">
+                <div class="main5-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main5-2-txt">
+                <span>황사 멈춰!</span>
+                다이소템으로 창틀 방충망 청소 끝내기
+              </div>
+            </a>
+          </div>
+          <div class="main5-2-div">
+            <a href="#">
+              <div class="main5-2-img">
+                <img src="img/main5-3.gif" alt="">
+                <div class="main5-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main5-2-txt">
+                <span>방충망은 어떻게 닦냐고요?</span>
+                이렇게 그래도 따라만 해보세요
+              </div>
+            </a>
+          </div>
+          <div class="main5-2-div">
+            <a href="#">
+              <div class="main5-2-img">
+                <img src="img/main5-4.png" alt="">
+                <div class="main5-bookmarkbtn">
+                  <a href=""><img src="img/bookmark.png" alt=""></a>
+                </div>
+              </div>
+              <div class="main5-2-txt">
+                <span>공간별 맞춤템으로 완벽</span>
+                버리는 공간 없는 알뜰 수납법
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="main6">
+        <div class="main6-1">
+          <div class="main6-title">
+            <h3>카테고리별 상품찾기</h3>
+          </div>
+        </div>
+        <div class="main6-2">
+          <div class="main6-2-lists">
+            <ul class="main6-2-ul">
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-1.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      선물추천
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-2.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      가구
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-3.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      페브릭
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-4.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      가전-디지털
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-5.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      주방용품
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-6.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      식품
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-7.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      데코-식물
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-8.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      조명
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-9.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      수납-정리
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-10.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      생활용품
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-11.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      생필품
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-12.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      유아-아동
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-13.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      반려동물
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-14.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      캠핑-레저
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-15.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      공구-DIY
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-16.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      인테리어시공
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-17.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      렌탈-구독
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-18.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      장보기
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="main6-2-list">
+                  <a href="#">
+                    <div class="main6-list-img">
+                      <img src="img/main6-19.png" alt="">
+                    </div>
+                    <div class="main6-list-text">
+                      혼수-신혼
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main6-left-slider slider">
+            <button type="button" class="main6-left-slider-btn">
+              <div class="main6-left-slider-div">
+                <span>
+                  <img src="img/left.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+          <div class="main6-right-slider slider">
+            <button type="button" class="main6-right-slider-btn">
+              <div class="main6-right-slider-div">
+                <span>
+                  <img src="img/right.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main7">
+        <div class="main7-1">
+          <div class="main7-txt">
+            <a href=""><h3>오늘의 딜</h3></a>
+          </div>
+          <div class="main7-more morecontent">
+            <a href="#">더보기</a>
+          </div>
+        </div>
+        <div class="main7-2">
+          <div class="main7-2-imgs">
+            <ul>
+              <li>
+                <div class="main7-2-imgs-li">
+                  <a href="#"></a>
+                  <div class="main7-2-img">
+                    <div class="main7-2-img-img">
+                      <img src="img/main7-1.png" alt="">
+                    </div>
+                    <div class="main7-bookmark">
+                      <div class="main7-bookmarkbtn">
+                        <a href=""><img src="img/bookmark.png" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main7-2-img-text">
+                    <div class="main7-2-img-text-title">
+                      <div class="main7-brand">
+                        팻토리아
+                      </div>
+                      <div class="main7-prod-name">
+                        [4/26원데이쿠폰!]리터락커 에어씰 봉투 6+1 외 사료 간식 모음전 + 증정품
+                      </div>
+                    </div>
+                    <div class="main7-2-img-text-price">
+                      <span>4%</span> 46,900외
+                    </div>
+                    <div class="main7-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">4.8
+                      <span>
+                        리뷰 4,585
+                      </span>
+                    </div>
+                    <div class="main7-2-img-text-delivery">
+                      <span>
+                        <img src="img/delivery.png" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="main7-2-imgs-li">
+                  <a href="#"></a>
+                  <div class="main7-2-img">
+                    <div class="main7-2-img-img">
+                      <img src="img/main7-2.png" alt="">
+                    </div>
+                    <div class="main7-bookmark">
+                      <div class="main7-bookmarkbtn">
+                        <a href=""><img src="img/bookmark.png" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main7-2-img-text">
+                    <div class="main7-2-img-text-title">
+                      <div class="main7-brand">
+                        삼성전자
+                      </div>
+                      <div class="main7-prod-name">
+                        [단하루특가 129만원대]비스포크 냉장고 RF85C90D2AP 4도어 공식인증점 메탈
+                      </div>
+                    </div>
+                    <div class="main7-2-img-text-price">
+                      <span>29%</span> 1,922,820
+                    </div>
+                    <div class="main7-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">5
+                      <span>
+                        리뷰 456
+                      </span>
+                    </div>
+                    <div class="main7-2-img-text-delivery">
+                      <span>
+                        <img src="img/delivery.png" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="main7-2-imgs-li">
+                  <a href="#"></a>
+                  <div class="main7-2-img">
+                    <div class="main7-2-img-img">
+                      <img src="img/main7-3.png" alt="">
+                    </div>
+                    <div class="main7-bookmark">
+                      <div class="main7-bookmarkbtn">
+                        <a href=""><img src="img/bookmark.png" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main7-2-img-text">
+                    <div class="main7-2-img-text-title">
+                      <div class="main7-brand">
+                        O!Life
+                      </div>
+                      <div class="main7-prod-name">
+                        국내산 40수 200g 디자인 프리미엄 호텔수건 5+5장 제트
+                      </div>
+                    </div>
+                    <div class="main7-2-img-text-price">
+                      <span>30%</span> 55,900
+                    </div>
+                    <div class="main7-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">4.6
+                      <span>
+                        리뷰 1,977
+                      </span>
+                    </div>
+                    <div class="main7-2-img-text-delivery">
+                      <span>
+                        <img src="img/delivery.png" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="main7-2-imgs-li">
+                  <a href="#"></a>
+                  <div class="main7-2-img">
+                    <div class="main7-2-img-img">
+                      <img src="img/main7-4.png" alt="">
+                    </div>
+                    <div class="main7-bookmark">
+                      <div class="main7-bookmarkbtn">
+                        <a href=""><img src="img/bookmark.png" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main7-2-img-text">
+                    <div class="main7-2-img-text-title">
+                      <div class="main7-brand">
+                        레이디가구
+                      </div>
+                      <div class="main7-prod-name">
+                        [4/26단하루] 레브/코쿤 키즈침대 외 원목&패브릭 아기침대/옷장/수납장
+                      </div>
+                    </div>
+                    <div class="main7-2-img-text-price">
+                      <span>58%</span> 279,900 외
+                    </div>
+                    <div class="main7-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">4.6
+                      <span>
+                        리뷰 5,605
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main7-left-slider slider">
+            <button type="button" class="main7-left-slider-btn">
+              <div class="main7-left-slider-div">
+                <span>
+                  <img src="img/left.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+          <div class="main7-right-slider slider">
+            <button type="button" class="main7-right-slider-btn">
+              <div class="main7-right-slider-div">
+                <span>
+                  <img src="img/right.png" alt="">
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="main8">
+        <div class="main8-1">
+          <div class="main8-txt">
+            <a href=""><h3>유저들의 인테리어 시공 리뷰</h3></a>
+          </div>
+          <div class="main8-more morecontent">
+            <a href="">더보기</a>
+          </div>
+        </div>
+        <div class="main8-2">
+          <div class="main8-2-contents">
+            <a href="#">
+              <div class="main8-2-img">
+                <img src="img/main8-1.png" alt="">
+              </div>
+            </a>
+            <div class="main8-2-text">
+              <div class="main8-2-text-title">
+                예나디자인
+              </div>
+              <div class="main8-2-text-content">
+                결혼하고 첫집에서 다음집으로 이사를 계획하면서 매매를 하게되었고 평소
+                SNS에서만 보던 내가 구상한 나의집을 상상하면서 구축매매+올인테리어를 하기로
+                결정하고 안산...
+              </div>
+            </div>
+          </div>
+          <div class="main8-2-contents">
+            <div class="main8-2-contents">
+              <a href="#">
+                <div class="main8-2-img">
+                  <img src="img/main8-2.png" alt="">
+                </div>
+              </a>
+              <div class="main8-2-text">
+                <div class="main8-2-text-title">
+                  홈 루덴스
+                </div>
+                <div class="main8-2-text-content">
+                  처음 상담부터 꼼꼼하고 친절하셨어요, 제가 2베이 아파트에서 김치냉장고까지
+                  있는 상황에서 넓은 주방을 갖고싶어하는 제 니즈를 잘 반영해주셨습니다. 제가...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main8-2-contents">
+            <div class="main8-2-contents">
+              <a href="#">
+                <div class="main8-2-img">
+                  <img src="img/main8-3.png" alt="">
+                </div>
+              </a>
+              <div class="main8-2-text">
+                <div class="main8-2-text-title">
+                  가우디 디자인
+                </div>
+                <div class="main8-2-text-content">
+                  인터넷에서 보고 계약 한 업체가 처음 계약과 다르게 자꾸 이런 저런 핑계로 금액을 
+                  많이 올려서 계약을 중도 해지하고, 오늘의 집을 통해 집에서 가까우면서 평가가 좋은 가우디를...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main9">
+        <div class="main9-1">
+          <div class="main9-txt">
+            <a href=""><h3>오늘의 기획전</h3></a>
+          </div>
+          <div class="main9-more morecontent">
+            <a href="">더보기</a>
+          </div>
+        </div>
+        <div class="main9-2">
+          <ul>
+            <li>
+              <div class="main9-2-lists">
+                <a href="#"></a>
+                <div class="main9-2-img">
+                  <img src="img/main9-1.png" alt="">
+                </div>
+                <div class="main9-2-text">
+                  <p>전상품 무료배송, 요일마다 바뀌는 파격특가 정보...</p>
+                  <p><strong>오픈런딜</strong></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main9-2-lists">
+                <a href="#"></a>
+                <div class="main9-2-img">
+                  <img src="img/main9-2.png" alt="">
+                </div>
+                <div class="main9-2-text">
+                  <p>오늘의집 큐레이션 편집샵 오!굿즈</p>
+                  <p><strong>오직 여기서만, O!Goods</strong></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main9-2-lists">
+                <a href="#"></a>
+                <div class="main9-2-img">
+                  <img src="img/main9-3.png" alt="">
+                </div>
+                <div class="main9-2-text">
+                  <p>최대 25만원 SAVE</p>
+                  <p><strong>0원한 특급패스, 오늘의집 배송</strong></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="main9-2-more">
+                <a href="#">
+                  <img src="img/morearrow.png" alt="">
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main10">
+        <div class="main10-1">
+          <div class="main10-txt">
+            <a href=""><h3>베스트</h3></a>
+          </div>
+          <div class="main10-more morecontent">
+            <a href="">더보기</a>
+          </div>
+        </div>
+        <div class="main10-2">
+          <div class="main10-2-selectlists">
+            <div class="main10-2-listname">
+              <ul class="main10-2-ul">
+                <li>
+                
+                    <div class="main10-check-div" id = "main-div-list-1">전체</div>
+              
+                </li>
+                <li>
+                 
+                    <div class="main10-check-div">선물추천</div>
+                
+                </li>
+                <li>
+                
+                    <div class="main10-check-div">가구</div>
+               
+                </li>
+                <li>
+               
+                    <div class="main10-check-div">패브릭</div>
+          
+                </li>
+                <li>
+                  
+                    <div class="main10-check-div">가전-디지털</div>
+            
+                </li>
+                <li>
+               
+                    <div class="main10-check-div">주방용품</div>
+              
+                </li>
+                <li>
+                 
+                    <div class="main10-check-div">식품</div>
+               
+                </li>
+                <li>
+               
+                    <div class="main10-check-div">데코-식물</div>
+                 
+                </li>
+                <li>
+              
+                  
+                    <div class="main10-check-div">수납-정리</div>
+                
+                </li>
+                <li>
+              
+              
+                    <div class="main10-check-div">생활용품</div>
+               
+                </li>
+                <li>
+               
+                    
+                    <div class="main10-check-div">생필품</div>
+                 
+                </li>
+                <li>
+                   
+                    <div class="main10-check-div">유아-아동</div>
+               
+                </li>
+                <li>
+        
+                    
+                    <div class="main10-check-div">반려동물</div>
+             
+                </li>
+                <li>
+             
+                    
+                    <div class="main10-check-div">캠핑-레저</div>
+             
+                </li>
+                <li>
+             
+                    
+                  <div class="main10-check-div">공구-DIY</div>
+           
+              </li>
+              <li>
+             
+                    
+                <div class="main10-check-div">인테리어시공</div>
+         
+            </li>
+            <li>
+             
+                    
+              <div class="main10-check-div">렌탈-구독</div>
+       
+          </li>
+          <li>
+             
+                    
+            <div class="main10-check-div">장보기</div>
+     
+        </li>
+        <li>
+             
+                    
+          <div class="main10-check-div">혼수-신혼</div>
+   
+      </li>
+                <!-- <li>
+                  <label for="">
+                    <input type="checkbox" class="main10-checkbox">
+                    <span>전체</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="">
+                    <input type="checkbox" class="main10-checkbox">
+                    <span>전체</span>
+                  </label>
+                </li> -->
+              </ul>
+            </div>
+            <div class="main10-left-slider slider">
+              <button type="button" class="main10-left-slider-btn">
+                <div class="main10-left-slider-div">
+                  <span>
+                    <img src="img/left.png" alt="">
+                  </span>
+                </div>
+              </button>
+            </div>
+            <div class="main10-right-slider slider">
+              <button type="button" class="main10-right-slider-btn">
+                <div class="main10-right-slider-div">
+                  <span>
+                    <img src="img/right.png" alt="">
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="main10-2-contentbox">
+            <div class="main10-2-content">
+              <a href="#">
+                <div class="main10-2-img">
+                  <img src="img/main10-1.png" alt="">
+                </div>
+                <div class="main10-2-text">
+                  <div class="main10-2-text-title">
+                    <div class="main10-brand">
+                      아멤홈
+                    </div>
+                    <div class="main10-prod-name">
+                      [5%쿠폰][맞춤]비침없는 도톰 레이스/쉬폰커튼(나비주름/핀형/봉집)
+                    </div>
+                  </div>
+                  <div class="main10-2-img-text-price">
+                    <span>28%</span> 16,800
+                  </div>
+                  <div class="main10-2-img-text-review">
+                    <img src="img/bluestar.png" alt="">4.7
+                    <span>
+                      리뷰 34,855
+                    </span>
+                  </div>
+                  <div class="main10-2-img-text-delivery">
+                    <span>
+                      <img src="img/specialprice.png" alt="" id = "special">
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="main10-2-content">
+              <a href="#">
+                <div class="main10-2-img">
+                  <img src="img/main10-2.png" alt="">
+                </div>
+                <div class="main10-2-text">
+                  <div class="main10-2-text">
+                    <div class="main10-2-text-title">
+                      <div class="main10-brand">
+                        헬로우슬립
+                      </div>
+                      <div class="main10-prod-name">
+                        [10%쿠폰] 부드러운 카스테라 워싱 향균 옥수수솜 간절기/사계절 차렵이불세트
+                      </div>
+                    </div>
+                    <div class="main10-2-img-text-price">
+                      <span>37%</span> 35,900
+                    </div>
+                    <div class="main10-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">4.7
+                      <span>
+                        리뷰 35,361
+                      </span>
+                    </div>
+                    <div class="main10-2-img-text-delivery">
+                      <span>
+                        <img src="img/specialprice.png" alt="" id = "special">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="main10-2-content">
+              <a href="#">
+                <div class="main10-2-img">
+                  <img src="img/main10-3.png" alt="">
+                </div>
+                <div class="main10-2-text">
+                  <div class="main10-2-text">
+                    <div class="main10-2-text-title">
+                      <div class="main10-brand">
+                        퀵슬립
+                      </div>
+                      <div class="main10-prod-name">
+                        Q4 유로탑 롤팩 매트리스 2size_적당푹신(롤팩)
+                      </div>
+                    </div>
+                    <div class="main10-2-img-text-price">
+                      <span>57%</span> 299,900
+                    </div>
+                    <div class="main10-2-img-text-review">
+                      <img src="img/bluestar.png" alt="">4.8
+                      <span>
+                        리뷰 15,919
+                      </span>
+                    </div>
+                    <div class="main10-2-img-text-delivery">
+                      <span>
+                        <img src="img/delivery.png" alt="">
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
-    <div class="mainFooter">
-      <div class="cusCenter">
-        <div class="cusCenterDiv">
-          <a href="#" class="cusCenterA">
-            고객센터
-          </a>
-          <span class="cusCenterSpan">
-
+    <div class="footer">
+      <div class="footer-1">
+        <div class="footer-1-div1">
+          <div class="footer-1-div1-box1">
+            <div class="footer-1-div1-1">
+              <div class="footer-1-div1-1-1">
+                <a href="#"><h2>고객센터</h2></a>
+              </div>
+              <div class="footer-1-div1-1-2">
+                <img src="img/right_icon.png" alt="">
+              </div>
+            </div>
+            <div class="footer-1-div1-2">
+              <a href="#" class="footer-1-div1-1-a">
+                1670-0876
+              </a>
+              <span>09:00~18:00</span>
+            </div>
+            <div class="footer-1-div1-3">
+              <ul>
+                <li>
+                  평일: 전체 문의 상담
+                </li>
+                <li>
+                  토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담
+                </li>
+                <li>
+                  일요일: 휴무
+                </li>
+              </ul>
+            </div>
+            <div class="footer-1-div1-4">
+              <div class="footer-1-div1-4-btn">
+                <button type="button">
+                  <div class="footer-1-div1-btn">카톡 상담(평일 09:00~18:00)
+                  </div>
+                </button>
+              </div>
+              <div class="footer-1-div1-4-btn">
+                <button type="button">
+                  <div class="footer-1-div1-btn">
+                    이메일 문의
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-1-div2">
+          <div class="footer-1-div2-1">
+            <ul>
+              <li>
+                <a href="#">
+                  회사소개
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  채용정보
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  이용약관
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <strong>개인정보 처리방침</strong>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  공지사항
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  안전거래센터
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-1-div2-2">
+            <ul>
+              <li>
+                <a href="#">
+                  입점신청
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  제휴/광고 문의
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  시공파트너 안내
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  상품광고 소개
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  고객의 소리
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="footer-2-div1">
+         <div class="footer-2-div1-1">
+          <div>
+            <span>|</span>
+            (주)버킷플레이스
+          </div>
+          <div>
+            <span>|</span>
+            대표이사 이승재
+          </div>
+         </div>
+         <div class="footer-2-div1-2">
+          <div>
+            <span>|</span>
+            서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층
+          </div>
+          <div>
+            <span>|</span>
+              <a href="#">
+                contact@bucketplace.net
+              </a>
+          </div>
+         </div>
+         <div class="footer-2-div1-3">
+          사업자등록번호 119-86-91245
+          <span>
+            <a href="#" style="font-weight: bold;">
+              사업자정보확인
+            </a>
+          </span>
+         </div>
+         <div class="footer-2-div1-4">
+          통신판매업신고번호 제2018-서울서초-0580호
+         </div>
+        </div>
+        <div class="footer-2-div2">
+          고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다. 
+          <span>
+            <a href="" style="font-weight: bold;">
+              서비스가입사실확인
+            </a>
           </span>
         </div>
-      </div>
-      <div class="phone">
-        <a href="#" class="phoneA"><b>1670-0876</b></a>
-        <time datetime="09:00" class="timeInfo">09:00</time>
-        "~"
-        <time datetime="18:00" class="timeInfo">18:00</time>
-      </div>
-      <div class="counstlingList">
-        <div class="listsDiv">
-          <!-- ::before -->
-          평일:전체 문의 상담
-        </div>
-        <div class="listsDiv">
-          <!-- ::before -->
-          토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담
-        </div>
-        <div class="listsDiv">
-          <!-- ::before -->
-          일요일: 휴무
-        </div>
-      </div>
-      <div class="FAQ">
-        <button class="faqBtn">카톡 상담(평일 09:~18:00)</button>
-        <a href="#" class="faqBtn">이메일 문의</a>
-      </div>
-    </div>
-    <div class="footerLine"></div>
-    <div class="footerBtns">
-      <a href="#" class="footerBtnsA">
-        회사소개
-      </a>
-      <a href="#" class="footerBtnsA">
-        채용정보
-      </a>
-      <a href="#" class="footerBtnsA">
-        이용약관
-      </a>
-      <a href="#" class="footerBtnsA">
-        <b>개인정보 처리방침</b>
-      </a>
-      <a href="#" class="footerBtnsA">
-        공지사항
-      </a>
-      <a href="#" class="footerBtnsA">
-        안전거래센터
-      </a>
-      <a href="#" class="footerBtnsA">
-        입점신청
-      </a>
-      <a href="#" class="footerBtnsA">
-        제휴/광고 문의
-      </a>
-      <a href="#" class="footerBtnsA">
-        시공파트너 안내
-      </a>
-      <a href="#" class="footerBtnsA">
-        상품광고 소개
-      </a>
-      <a href="#" class="footerBtnsA">
-        고객의 소리
-      </a>
-    </div>
-    <div class="footerLine"></div>
-    <div class="infoFooter">
-      <div class="comInfo">
-        <div class="comInfoDiv">
-          <div class="infoCss">
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-              (주)버킷플레이스
-            </div>
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-              대표이사 이승재
-            </div>
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-                서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층
-            </div>
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-              <a href="#">contact@bucketplace.net</a>
-            </div>
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-              <span>사업자등록번호 119-86-91245</span>
-              <a href="#" class="infoCheck">사업자정보확인</a>
-            </div>
-            <div class="infoCss">
-              <span class="infoSpan">|</span>
-              통신판매업신고번호 제2018-서울서초-0580호
-            </div>
+        <div class="footer-2-img-div">
+          <div class="footer2-img-div-img1">
+            <img src="img/isms.png" alt="">
+          </div>
+          <div class="footer2-img-div-img2">
+            <img src="img/dny.png" alt="">
+          </div>
+          <div class="footer2-img-div-img3">
+            <img src="img/por.png" alt="">
           </div>
         </div>
-      </div>
-      <div>
-        <span>고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</span>
-        <a href="#" class="serviceA">서비스가입사실확인</a>
-      </div>
-      <div class="infoIcons">
-        <div class="icon-imgs">
-          <img src="#" alt="isms">
-          <div class="isms-text">
-            <span>오늘의집 서비스 운영</span>
-            <br>
-            2021.09.08 ~ 2024.09.07
+        <div class="footer-2-div3">
+          (주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.
+        </div>
+        <div class="footer-2-div4">
+          <div class="footer-2-div4-img">
+            <a href="">
+              <img src="img/youtube.png" alt="">
+            </a>
           </div>
-        </div>
-        <div class="icon-imgs">
-          <img src="#" alt="dny인증">
-        </div>
-        <div class="icon-imgs">
-          <a href="#">
-            <img src="#" alt="pop">
-          </a>
-        </div>
-      </div>
-      <div style="font-size: 8px;">
-        (주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.
-      </div>
-      <div class="sns">
-        <div class="sns-icons">
-          <a href="#">
-            <img src="#" alt="youtube">
-          </a>
-        </div>
-        <div class="sns-icons">
-          <div class="sns-icons">
-            <a href="#">
-              <img src="#" alt="insta">
+          <div class="footer-2-div4-img">
+            <a href="">
+              <img src="img/insta.png" alt="">
+            </a>
+          </div>
+          <div class="footer-2-div4-img">
+            <a href="">
+              <img src="img/facebook.png" alt="">
+            </a>
+          </div>
+          <div class="footer-2-div4-img">
+            <a href="">
+              <img src="img/kakao.png" alt="">
+            </a>
+          </div>
+          <div class="footer-2-div4-img">
+            <a href="">
+              <img src="img/naver.png" alt="">
             </a>
           </div>
         </div>
-        <div class="sns-icons">
-          <div class="sns-icons">
-            <a href="#">
-              <img src="#" alt="facebook">
-            </a>
-          </div>
-        </div>
-        <div class="sns-icons">
-          <div class="sns-icons">
-            <a href="#">
-              <img src="#" alt="kakao">
-            </a>
-          </div>
-        </div>
-        <div class="sns-icons">
-          <div class="sns-icons">
-            <a href="#">
-              <img src="#" alt="naver">
-            </a>
-          </div>
+        <div class="footer-2-div5">
+          Copyright 2014. bucketplace, Co., Ltd. All rights reserved.
         </div>
       </div>
-      <p>
-        Copyright 2014. bucketplace, Co., Ltd. All rights reserved.
-      </p>
     </div>
   </footer>
 </body>

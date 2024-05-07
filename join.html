@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>join</title>
+  <link rel="stylesheet" href="css/join.css">
+  <script defer src="./javascript/join.js"></script>
+</head>
+<body>
+  <div class="div-1">
+    <a href="index.html">
+      <img src="img/login/mainlogo.png" alt="" id="main">
+    </a>
+  </div>
+  <div class="div-2">
+    <div class="div-2-1">
+      <strong>회원가입</strong>
+    </div>
+    <div class="div-2-2">
+      <div class="section2-2-1">SNS계정으로 간편 로그인/회원가입</div>
+      <div class="section2-2-2">
+        <span>
+          <a href="">
+            <img src="img/login/facebook.png" alt="" id = "img1">
+          </a>
+        </span>
+        <span>
+          <a href="">
+            <img src="img/login/kakao.png" alt="" id="img2">
+          </a>
+        </span>
+        <span>
+          <a href="">
+            <img src="img/login/naver.png" alt="" id="img3">
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="div-2-3">
+      <form>
+        <label for="#"><strong>이메일</strong></label>
+        <div class="email-input">
+          <span>
+            <input type="text" placeholder="이메일" required id="email-input" class="email">
+          </span>
+          <span>
+            @
+          </span>
+          <span>
+            <select name="selector" id="selector">
+              <option value="none">
+                선택해주세요
+              </option>
+              <option value="naver">
+                naver.com
+              </option>
+              <option value="han">
+                hanmail.net
+              </option>
+              <option value="daum">
+                daum.net
+              </option>
+              <option value="google">
+                gmail.com
+              </option>
+              <option value="naet">
+                nate.com
+              </option>
+              <option value="hot">
+                hotmail.com
+              </option>
+              <option value="outlook">
+                outlook.com
+              </option>
+              <option value="icloud">
+                icloud.com
+              </option>
+            </select>
+          </span>
+          <div class="email-error">
+            필수입력 항목입니다
+          </div>
+        </div>
+        <div class="email-button">
+          <button type="submit">
+            이메일 인증하기
+          </button>
+        </div>
+        <div class="password-div">
+          <div class="password-title">
+            <strong>비밀번호</strong>
+          </div>
+          <div class="password-explain">
+            영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요
+          </div>
+          <div class="password-input">
+            <label for="">
+              <input type="password" placeholder="비밀번호" required class="password">
+            </label>
+            <div class="password-error">
+              필수입력 항목입니다
+            </div>
+          </div>
+        </div>
+        <div class="password-re-div">
+          <div class="password-re-title">
+            <strong>비밀번호 확인</strong>
+          </div>
+          <div class="password-re-input">
+            <input type="password" placeholder="비밀번호 확인" required class="password-re">
+            <div class="password-re-error">
+              확인을 위해 한번 더 입력해주세요
+            </div>
+          </div>
+        </div>
+        <div class="nickname-div">
+          <div class="nickname-title">
+            <strong>닉네임</strong>
+          </div>
+          <div class="nickname-explain">
+            다른 유저와 겹치지 않도록 입력해주세요. (2~20자)
+          </div>
+          <div class="nickname-input">
+            <label for="">
+              <input type="text" placeholder="별명 (2~20자)" required class="nickname">
+            </label>
+            <div class="nickname-error">
+              필수입력 항목입니다
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div2-4">
+        <div class="agree">
+          <div class="agree-title">
+            <h2>약관동의</h2>
+          </div>
+          <div class="agree-checkbox">
+            <div class="agree-all">
+              <input type="checkbox" id="agree-all">
+              <label for="">
+                <strong>전체동의</strong> 선택항목에 대한 동의 포함
+              </label>
+              <hr class="checkbox-hr">
+            </div>
+            <div class="agree-one">
+              <div class="agree-one-1">
+                <input type="checkbox" class="term">
+                <label for="">
+                  만 14세 이상입니다<span>(필수)</span>
+                </label>
+              </div>
+              <div class="agree-one-1">
+                <input type="checkbox" class="term">
+                <label for="">
+                  이용약관<span>(필수)</span>
+                </label>
+              </div> 
+              <div class="agree-one-1">
+                <input type="checkbox" class="term">
+                <label for="">
+                  개인정보 수집 및 이용동의<span>(필수)</span>
+                </label>
+              </div>
+              <div class="agree-one-1">
+                <input type="checkbox" class="term">
+                <label for="">
+                  개인정보 마케팅 활용 동의<span>(선택)</span>
+                </label>
+              </div>
+              <div class="agree-one-1">
+                <input type="checkbox" class="term">
+                <label for="">
+                  이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신<span>(선택)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="div-2-5">
+      <img src="img/join/notrobot.png" alt="">
+      <form>
+        <label for=""></label>
+        <input type="checkbox" id="check-robot">
+      </form>
+    </div>
+    <div class="div-2-6">
+      <button type="submit" id="join-btn">
+        회원가입하기
+      </button>
+    </div>
+    <div class="div-2-7">
+      이미 아이디가 있으신가요?<a href="login.html">로그인</a>
+    </div>
+  </div>
+</body>
+</html>
